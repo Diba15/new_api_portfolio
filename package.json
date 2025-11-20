@@ -6,6 +6,10 @@
   "devDependencies": {
     "@types/bun": "latest"
   },
+  "scripts": {
+    "dev": "bun run src/server.ts",
+    "build": "bun build src/server.ts --outfile=dist/server.js"
+  },
   "peerDependencies": {
     "typescript": "^5"
   },
