@@ -1,15 +1,11 @@
 {
-  "version": 2,
-  "builds": [
+  "bunVersion": "1.x",
+  "buildCommand": "bun install",
+  "installCommand": "bun install",
+  "rewrites": [
     {
-      "src": "src/server.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "src/server.ts"
+      "source": "/(.*)",
+      "destination": "/api/index"
     }
   ]
 }
