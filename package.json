@@ -16,7 +16,7 @@
     "dev": "node --enable-source-maps dist/server.js"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "peerDependencies": {
     "typescript": "^5"
