@@ -1,5 +1,6 @@
 import {Elysia, t} from "elysia"
 import {connect, model, Schema} from "mongoose";
+import {cors} from "@elysiajs/cors";
 import project from "./models/Project";
 import certificate from "./models/Certificate";
 import student from "./models/Student";
@@ -42,6 +43,9 @@ const Certificate = model('Certificate', certificateSchema);
 const Work = model('Work', workSchema);
 
 const app = new Elysia();
+
+// CORS
+app.use(cors());
 
 // Student Routes
 app.get('/students', async () => {
@@ -324,3 +328,6 @@ app.get('/works', async () => {
 app.listen(PORT)
 
 console.log("Server run on PORT: " + PORT)
+
+export type App = typeof app
+export default app
