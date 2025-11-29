@@ -1,5 +1,4 @@
 const certificate = {
-    id: String,
     title: String,
     issuer: String,
     issue_date: String,

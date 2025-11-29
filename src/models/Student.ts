@@ -1,7 +1,7 @@
 const student = {
-    roll_no: Number,
-    name: String,
-    year: Number,
+    title: String,
+    company: String,
+    duration: String,
     subjects: [String]
 }
 
